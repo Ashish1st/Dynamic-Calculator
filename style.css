@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    min-width: 100vw;
+    height: 100vh;
+    background-color: rgba(71, 227, 227, 0.703);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    padding: 0 5px;
+}
+
+.container {
+    width: 350px;
+    height: 450px;
+    background-color: #000000;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(5, 1fr); */
+    /* row-gap: 10px; */
+    place-items: center;
+    border-radius: 20px;
+}
+
+.container .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.container .btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+}
+
+input {
+    grid-area: 1/1/2/5;
+    width: 90%;
+    height: 55px;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    text-align: end;
+    pointer-events: none;
+}
+
+.container .btn:nth-child(4n+1),
+.redColor {
+    background-color: rgb(255, 72, 0);
+}
+
+@media (max-width : 480px) {
+    .container {
+        width: 300px;
+    }
+
+}
